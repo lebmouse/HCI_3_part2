@@ -12,6 +12,37 @@
           <div>주소 : {{basicInformationObj.address}}</div>
         </v-flex>
       </v-layout>
+      <v-divider></v-divider>
+      <v-layout row wrap>
+        <div>회사명 : {{workHistoryObj.company}}</div>
+        <div>입사일 : {{workHistoryObj.date1}}</div>
+        <div>퇴사일 : {{workHistoryObj.date2}}</div>
+        <div>직급 : {{workHistoryObj.position}}</div>
+        <div>담당업무 : {{workHistoryObj.responsibility}}</div>
+        <div>퇴사사유 : {{workHistoryObj.leavingReason}}</div>
+      </v-layout>
+      <v-layout row wrap>
+        <div>{{edcatationObj.univarcial}}</div>
+        <div>{{edcatationObj.major}}</div>
+        <div>{{edcatationObj.grades}}</div>
+        <div>{{edcatationObj.date1}}</div>
+        <div>{{edcatationObj.date2}}</div>
+      </v-layout>
+      <v-layout row wrap>
+        <div>{{awardsObj.name}}</div>
+        <div>{{awardsObj.contents}}</div>
+        <div>{{awardsObj.agency}}</div>
+        <div>{{awardsObj.date1}}</div>
+      </v-layout>
+      <v-layout row wrap>
+        <div>이름 : {{skillsObj.name}}</div>
+        <div>점수/등급 : {{skillsObj.grades}}</div>
+        <div>발행처/기관 : {{skillsObj.agency}}</div>
+      </v-layout>
+      <v-layout row wrap>
+        <div>기타</div>
+        <div>{{othersObj}}</div>
+      </v-layout>
     </v-container>
   </div>
 </template>
@@ -33,6 +64,9 @@ export default {
     },
     skillsObj() {
       return this.$store.state.skillsObj;
+    },
+    othersObj(){
+      return this.$store.state.othersObj
     }
   }
 };

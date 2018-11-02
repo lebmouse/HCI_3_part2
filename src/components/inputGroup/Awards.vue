@@ -4,15 +4,15 @@
       <v-container grid-list-xs>
         <v-layout row wrap>
           <v-flex xs2>
-            <v-text-field label="수상명"></v-text-field>
+            <v-text-field v-model="form.name" label="수상명"></v-text-field>
           </v-flex>
           <v-flex offset-xs1 xs3>
-            <v-text-field label="수상내용"></v-text-field>
+            <v-text-field v-model="form.contents" label="수상내용"></v-text-field>
           </v-flex>
         </v-layout>
         <v-layout row wrap>
           <v-flex xs2>
-            <v-text-field label="수여기관"></v-text-field>
+            <v-text-field v-model="form.agency" label="수여기관"></v-text-field>
           </v-flex>
           <v-flex offset-xs1 xs3>
             <v-text-field v-model="form.date1" label="수상일" hint="MM/DD/YYYY" persistent-hint prepend-icon="event"></v-text-field>

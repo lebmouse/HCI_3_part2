@@ -15,10 +15,10 @@
         </v-layout>
         <v-layout row wrap>
           <v-flex xs3>
-            <v-text-field v-model="form.date1" label="입사일" hint="MM/DD/YYYY" persistent-hint prepend-icon="event"></v-text-field>
+            <v-text-field v-model="form.date1" label="입학" hint="MM/DD/YYYY" persistent-hint prepend-icon="event"></v-text-field>
           </v-flex>
           <v-flex xs3>
-            <v-text-field v-model="form.date2" label="퇴사일" hint="MM/DD/YYYY" persistent-hint prepend-icon="event"></v-text-field>
+            <v-text-field v-model="form.date2" label="졸업" hint="MM/DD/YYYY" persistent-hint prepend-icon="event"></v-text-field>
           </v-flex>
         </v-layout>
         <v-layout row wrap>
